@@ -1,14 +1,18 @@
 mogwai is a library that helps you write custom, user-defined Gremlin steps in 
 Jython or any JVM language.  
 
-A Jython example is provided. To try the example, download the latest Jython
+A Jython example is provided. 
+
+To try the example, download the latest Jython 
 (http://www.jython.org/downloads.html) and copy it to 
 
-gremlin/target/gremlin-*-standalone/lib/jython.jar
+$ cp jython2.5.2/jython.jar gremlin/target/gremlin-*-standalone/lib/jython.jar
 
-So that you can run Gremlin scripts from any directory, create an alias for 
-gremlin.sh in your .bash_profile by adding a line that points to your 
-gremlin.sh:
+You need modify your environment so that you can run Gremlin scripts from any 
+directory. 
+
+
+Add these lines to your .bash_profile: 
 
 export CLASSPATH=$CLASSPATH:/home/james/projects/mogwai;
 export JYTHONPATH=$JYTHONPATH:/home/james/projects/mogwai;
@@ -21,6 +25,8 @@ $ source .bash_profile
 
 And you need updated gremlin.sh scripts that will enable you to run gremlin.sh 
 from any directory while not overriding your CLASSPATH.
+
+Copy the updated scripts to your Gremlin directory:
 
 $ cp mogwai/scripts/gremlin.sh /home/james/gremlin/gremlin.sh
 $ cp mogwai/scripts/gremlin.sh.2 /home/james/gremlin/target/gremlin-*-standalone/bin/gremlin.sh
