@@ -2,6 +2,8 @@ package mogwai.factories;
 
 import org.python.util.PythonInterpreter;
 
+// from http://wiki.python.org/jython/JythonMonthly/Articles/September2006/1
+
 public class JythonFactory {
     private static JythonFactory instance = null;
     
