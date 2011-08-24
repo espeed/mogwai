@@ -22,7 +22,7 @@ public class JythonFactory {
 	interpreter.execfile(pathToJythonModule);
 	String tempName = pathToJythonModule.substring(pathToJythonModule.lastIndexOf("/")+1);
 	tempName = tempName.substring(0, tempName.indexOf("."));
-	System.out.println(tempName);
+	//System.out.println(tempName);
 	String instanceName = tempName.toLowerCase();
 	String javaClassName = tempName.substring(0,1).toUpperCase() +
 	    tempName.substring(1);
