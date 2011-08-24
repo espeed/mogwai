@@ -3,6 +3,7 @@ package mogwai.factories;
 import org.python.util.PythonInterpreter;
 
 // from http://wiki.python.org/jython/JythonMonthly/Articles/September2006/1
+// see http://wiki.python.org/jython/ReplaceJythonc for potential alternatives to this approach
 
 public class JythonFactory {
     private static JythonFactory instance = null;
